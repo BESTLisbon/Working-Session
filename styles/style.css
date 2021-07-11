@@ -1,0 +1,91 @@
+/*
+* @author    BEST Lisbon http://best.tecnico.ulisboa.pt/
+* @copyright BEST Lisbon 2020. All rights reserved.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar-nav {
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+#slideshow .carousel-inner .carousel-item .img-parent {
+    filter: brightness(30%);
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+}
+
+#slideshow {
+    margin-top: 75px;
+}
+
+.green {
+    background-color: rgba(20, 144, 69, 0.9);
+}
+
+svg {
+    margin-top: -3%;
+}
+
+
+.grey {
+    background-color: #e4e0e0; 
+}
+
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+}
+  
+@keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    #slideshow .carousel-inner {
+        max-height: 1000px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    #slideshow .carousel-inner {
+        max-height: 900px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    #slideshow .carousel-inner {
+        max-height: 700px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    #slideshow .carousel-inner {
+        max-height: 600px;
+    }
+
+    #slideshow .carousel-inner .carousel-item > img {
+        margin-top: -15%;
+    }
+}
